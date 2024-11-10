@@ -1,0 +1,291 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#App {
+  width: 70%;
+  height: 60%;
+  box-shadow: 4px 3px 8px 3px lightblue;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+.left {
+  margin-inline: 10px;
+  box-sizing: border-box;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left > form {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: space-evenly;
+  border-radius: 5px;
+
+  border: 1px solid lightblue;
+  box-shadow: 4px 3px 8px 3px lightblue;
+  padding-block: 20px;
+  padding-inline: 20px;
+  gap: 10px;
+}
+.left > form input {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-inline: 20px;
+  padding-block: 10px;
+  border: 1px solid aqua;
+  border-radius: 5px;
+}
+#btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#btn button {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-inline: 20px;
+  padding-block: 5px;
+  border: 1px solid aqua;
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+}
+#btn > button:hover {
+  background-color: white;
+  color: blue;
+}
+
+.middle {
+  text-align: center;
+  box-sizing: border-box;
+  border-left: 1px solid aqua;
+  width: 20%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle #card {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 3px 8px 3px lightblue;
+  border-radius: 10px;
+  margin-inline: 20px;
+  overflow: auto;
+}
+
+#card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+#card #info {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  height: 50%;
+  justify-content: space-evenly;
+}
+#info > h2 {
+  color: green;
+  margin-block: 5px;
+}
+#info > h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#info > h4 button {
+  padding-inline: 20px;
+  padding-block: 7px;
+  border: 1px solid aqua;
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+}
+#info > button:hover {
+  background-color: white;
+  color: blue;
+}
+
+.right {
+  box-sizing: border-box;
+  width: 0%;
+  height: 100%;
+  border-left: 1px solid aqua;
+
+  display: flex;
+  align-items: center;
+  display: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding-inline: 20px;
+}
+
+#rightcontainer {
+  height: 90%;
+  border-radius: 10px;
+  margin-block: 20px;
+  overflow-y: scroll;
+  box-shadow: 4px 3px 8px 3px lightblue;
+  padding-block: 10px;
+}
+#followers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#followerscard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 50px;
+  margin-block: 10px;
+
+  padding-inline: 10px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+#followerscard img {
+  border-radius: 100%;
+  width: 20%;
+  height: 90%;
+  object-fit: contain;
+}
+
+#following {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#followingcard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 50px;
+  margin-block: 10px;
+
+  padding-inline: 10px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+#following img {
+  border-radius: 100%;
+  width: 20%;
+  height: 90%;
+  object-fit: contain;
+}
+
+#repositories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.repo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 80%;
+  margin-block: 10px;
+}
+
+.repo h3 {
+  grid-column: 1 / 3;
+  font-size: 1.5em;
+  margin: 0;
+  color: #333;
+}
+
+.repo p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.repo a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.repo a:hover {
+  text-decoration: underline;
+}
+#Owner{
+  position: fixed;
+  bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #App {
+    width: 100vw !important;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0 auto;
+    box-shadow: none;
+    height: fit-content;
+    overflow: scroll;
+    flex-wrap: wrap;
+    font-size: smaller;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 1s;
+  }
+  .left {
+    width: 100vw !important;
+    flex-direction: column;
+    margin: 0 auto;
+    box-shadow: none;
+    height: fit-content;
+    overflow: scroll;
+    transition-duration: 1s;
+    margin-bottom: 10px;
+  }
+  #middle {
+    width: 90vw !important;
+    flex-direction: column;
+    height: fit-content;
+    padding: 10px;
+    border: none;
+    transition-duration: 1s;
+  }
+  #card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+    transition-duration: 1s;
+  }
+}
